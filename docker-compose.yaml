@@ -1,0 +1,9 @@
+services:
+  drogon:
+    image: drogon_img
+    build: .
+    container_name: drogon
+    volumes:
+      - ".:/dev/app/"
+    stdin_open: true
+    tty: true
